@@ -29,7 +29,7 @@
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>8.6.0</version>
                 <configuration>
-                    <mainClass>pl.fyv.Main</mainClass>
+                    <mainClass>pl.fyv.datachartMain</mainClass>
                     <vendor>pl.fyv</vendor>
                     <needShortcut>true</needShortcut>
                     <appName>Data Chart</appName>
