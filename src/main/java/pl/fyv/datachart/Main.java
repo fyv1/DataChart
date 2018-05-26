@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import pl.fyv.datachart.view.ChartController;
 
 import java.io.IOException;
 
@@ -22,9 +23,11 @@ public class Main extends Application {
         stage = primaryStage;
         stage.setTitle("DataChart");
 
-
         display();
 
+        ChartController chartController = new ChartController();
+        chartController.setMain(this);
+        chartController.setStage(primaryStage);
     }
 
     private void display() {
